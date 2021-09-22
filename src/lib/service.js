@@ -5,11 +5,11 @@ const GET_USERS = '/users/';
 const POST_USER = '/posts/'
 
 class UserDataService {
-    async getUsersData(userId) {
-        return await axios.get(`${BASE_API_URL}${GET_USERS}${userId}`);
+    getUsersData(userId) {
+        return axios.get(`${BASE_API_URL}${GET_USERS}${userId}`);
     }
-    async postUserData(userId) {
-        return await axios.get(`${BASE_API_URL}${POST_USER}?userId=${userId}`);
+    postUserData(userId) {
+        return axios.get(`${BASE_API_URL}${POST_USER}?userId=${userId}`);
     }
 }
 
